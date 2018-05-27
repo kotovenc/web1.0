@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  //position: fixed;
+  width: 100%;
+  background-color: #ECEBE4;
+  height: 15%;
+}
+
+.logo img {
+  display: inline;
+  margin: 1% 1% 1% 1%;
+  height: 80%;
+  width: 7%;
+}
+
+.tit {
+  display: inline;
+  margin-left: 100px;
+  padding: 1% 0% 0% 1%;
+  color: #CC998D;
+  text-align: left;
+  font-size: 60px;
+}
+
+.main {
+  height: 70%;
+}
+
+.footer {
+  background-color: #ECEBE4;
+  height: 15%;
+}
