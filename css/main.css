@@ -6,6 +6,7 @@
 .header {
   position: fixed;
   width: 100%;
+  margin-top: -77px;
   background-color: #ECEBE4;
   height: 77px;
 }
@@ -28,20 +29,22 @@
 }
 
 .main {
-  height: 100%;
+  margin-top: 77px;
 }
 
 .about_us {
-  height: 700px;
-  background-color: blue;
+  height: 800px;
+  background-color: #FFAD5A;
 }
 
 .portfolio {
-  height: 700px;
-  background-color: green;
+  height: 800px;
+  background-color: #A6621D;
 }
 
 .footer {
-  background-color: #ECEBE4;
+  //position: absolute;
+  //bottom: 0px;
+  background-color: black;
   height: 100px;
 }
