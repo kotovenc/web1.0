@@ -4,33 +4,44 @@
 }
 
 .header {
-  //position: fixed;
+  position: fixed;
   width: 100%;
   background-color: #ECEBE4;
-  height: 15%;
+  height: 77px;
 }
 
-.logo img {
-  display: inline;
-  margin: 1% 1% 1% 1%;
+.logo {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 25px;
   height: 80%;
   width: 7%;
+  background-color: black;
 }
 
 .tit {
-  display: inline;
-  margin-left: 100px;
-  padding: 1% 0% 0% 1%;
+  display: inline-block;
+  margin-left: 50px;
   color: #CC998D;
   text-align: left;
   font-size: 60px;
 }
 
 .main {
-  height: 70%;
+  height: 100%;
+}
+
+.about_us {
+  height: 700px;
+  background-color: blue;
+}
+
+.portfolio {
+  height: 700px;
+  background-color: green;
 }
 
 .footer {
   background-color: #ECEBE4;
-  height: 15%;
+  height: 100px;
 }
