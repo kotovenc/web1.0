@@ -8,9 +8,9 @@
 	<div class="header_menu">
 		<div class="header_logo">
 			<img src="#" name="header_logo">
-			Oenrique bla-bla-bla
+			<p>Oenrique</p>
 		</div>
-		<div></div>
+		<div><!--Для пространства между лого и меню--></div>
 		<a href="#home"><div class="menu_item">Home</div></a>
 		<a href="#test"><div class="menu_item">About</div></a>
 		<a href="#service"><div class="menu_item">Service</div></a>
@@ -33,7 +33,7 @@
 	<a id = "test"></a>
 	<div class="About_block">	<!--Второй общий блок. About. -->
 		<div class="about_me_text">
-			<div class="block_title"><h2>Know more about me</h2></div>
+			<h2>Know more about me</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -82,7 +82,7 @@
 		<div class="block_title">
 			<h2>My Skills</h2>
 		</div>
-		<div><img src="#" name="skills_plot"></div>
+		<div class="skills_plot"><img src="#" name="skills_plot"></div>
 		<div class="adobe_img_block">
 			<div class="adobe_item"><img src="#" name="Xd"></div>
 			<div class="adobe_item"><img src="#" name="Ae"></div>
@@ -146,9 +146,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<hr>
-	<div class="metric_block">
 		<div class="metric_panel">
 			<div class="metric_panel_item">
 				<img src="#">
@@ -175,23 +172,28 @@
 	<hr>
 		<a id="contact"></a>
 	<div class="contact_block">
-		<div class="block_title">Say Hellow!</div>
-		<form>
-		<div>
-			<input type="text" id = "name" name="Name" placeholder=" ">
-			<label for="name">Name</label>
-		</div>
-		<div>
-			<input type="email" id = "email" name="Email" placeholder=" ">
-			<label for="email">Email</label>
+		<div class="block_title">
+			<h2>Say Hellow!</h2>
 		</div>
 		<form>
-		<div>
-			<input type="text" id = "message" name="Message" placeholder=" ">
-			<label for="name">Message</label>
-		</div>
+			<div class="textemail">
+				<div>
+					<input type="text" id = "name" name="Name" placeholder=" ">
+					<label for="name">Name</label>
+				</div>
+				<div>
+					<input type="email" id = "email" name="Email" placeholder=" ">
+					<label for="email">Email</label>
+				</div>
+			</div>
+			<div class="message">
+				<div>
+					<input type="text" id = "message" name="Message" placeholder=" ">
+					<label for="name">Message</label>
+				</div>
+			</div>
 
-		<input type="submit" value="Send">
+			<input type="submit" value="Send">
 		</form>
 		<button class="top_arrow"><img src="#" name="top arrow"></button>
 		<hr>
@@ -205,7 +207,8 @@
 					<img src="#" name="Be">
 					<img src="#" name="Picassa">
 				</div>
-			<p>2018. All Right Reserved</p>
+			<div>2018. All Right Reserved</div>
+			<div></div>
 			</div>
 		</footer>
 	</div>

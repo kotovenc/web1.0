@@ -32,6 +32,12 @@ height: 103px;
 .menu_item{
 	display: grid;
 	margin: 15px 15px;
+	text-decoration: none;
+	color: black; 	
+}
+
+.header_menu > a{
+	text-decoration: none;
 }
 
 .About_block{
@@ -41,12 +47,15 @@ height: 103px;
 	background-color: orange;
 	height: 300px;
 }
-
-.block_title > h2{
+.about_me_text > h2{
 	font-size: 40px;
 }
+.block_title > h2{
+	font-size: 40px;
+	text-align: center;
+}
 
-.About_blocl > p{
+.About_block > p{
 	font-size: 18px;
 }
 
@@ -62,11 +71,14 @@ height: 103px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	padding: 20px;
 }
 
 .serv_panel_item{
 	display: grid;
 	align-items: center;
+
 }
 
 .my_skills_block{
@@ -76,7 +88,7 @@ height: 103px;
 }
 
 .skills_plot{
-
+padding: 40px;
 }
 .adobe_item{
 	width: 20px;
@@ -87,9 +99,14 @@ height: 103px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.portfolio_block{
-
+.service_block{
 	padding: 60px;
+	height: 300px;
+}
+
+.portfolio_block{
+	padding: 60px;
+	text-align: center;
 }
 
 .portfolio_block_panel{
@@ -101,11 +118,72 @@ height: 103px;
 .load_more_button{
 	
 }
+
+.testimonials_block{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 50px;
+	padding: 60px;
+}
+
+.slide_block{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.slide_item{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+
+}
+.metric_panel{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
 }
 .contact_block{
 	padding: 60px;
+}
+
+form{
+	display: grid;
+	grid-gap: 20px;
+	width: 450px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.textemail {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.message{
+	display: grid;
+	align-items: center;
 
 }
-.service_block{
-	height: 300px;
+
+#message { 
+	height: 100px;
+	width: 450px;
+ }
+
+.footer_root{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	height: 70px;
 }
+
+.social_link_block{
+	display: flex;
+	align-items: center;
+}
+
+
