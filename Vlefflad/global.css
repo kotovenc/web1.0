@@ -1,37 +1,77 @@
+html {
+    scroll-behavior: smooth
+}
+
 *{
 	margin: 0 auto;
 	padding:0;
 }
 
+p{
+	font-family: fantasy;
+}
+
+h1{
+	font-family: "Arial Black";
+	font-size: 70px;
+}
+
+.logo_image{
+	height: 50px;
+	//border: 2px dotted red;
+}
+
 .header_block{
-	height:500px;
-	padding: 60px;
-	margin-top: 50px;
+	box-sizing: border-box;
+	height:750px;
+	padding: 110px;
+	background-image: url("img/header_bg.png");
+	//margin-top: 50px;
+	//border: 3px dotted red;
+}
+
+.hero_img{
+	z-index: 0;
+	position: absolute;
+	left: 1000px;
+	top: 100px;
+	width: 600px;
+
 }
 
 .header_logo{
-display: grid;
-justify-content: left;
+	margin-top:10px;
+	display: grid;
+	height: 50px;
+	justify-content: left;
 }
+
 .header_title{
-height: 103px;
+	height: 103px;
+}
+
+.know-hire_buttons{
+	//border: 3px dotted red;
+	margin-top: 100px;
 }
 
 .header_menu{
+	z-index: 100;
 	display: grid;
+	box-sizing: border-box;
 	grid-template-rows: 1fr;
 	grid-template-columns: 200px auto 60px 80px 80px 80px 80px 80px;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: white;
-	box-shadow: 0 0 30px rgba(0,0,0,0.5);
-	height: 50px;
+	background-color: rgba(255,255,255, 0.85);
+	box-shadow: 0 0 30px rgba(0,0,0,0.1);
+	height: 100px;
 }
 
 .menu_item{
 	display: grid;
-	margin: 15px 15px;
+	margin: 25px 15px;
 	text-decoration: none;
 	color: black; 	
 }
@@ -43,9 +83,9 @@ height: 103px;
 .About_block{
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	padding: 60px;
-	background-color: orange;
-	height: 300px;
+	padding: 110px;
+	background-color: white;
+	height: 675px;
 }
 .about_me_text > h2{
 	font-size: 40px;
@@ -61,10 +101,12 @@ height: 103px;
 
 
 .services_block{
-	padding: 60px;
+	padding: 110px;
 	display: grid;
+	height: 700px;
 	align-items: center;
-	padding: 60px;
+	background-color: #f6f6f6;
+	padding: 110px;
 }
 
 .services_panel{
@@ -82,8 +124,8 @@ height: 103px;
 }
 
 .my_skills_block{
-	padding: 60px;
-	height: 500px; 
+	padding: 110px;
+	height: 750px; 
 	text-align: center;
 }
 
@@ -100,12 +142,14 @@ padding: 40px;
 }
 
 .service_block{
-	padding: 60px;
+	padding: 110px;
 	height: 300px;
 }
 
 .portfolio_block{
-	padding: 60px;
+	padding: 110px;
+	height: 1100px;
+	background-color: #f6f6f6;
 	text-align: center;
 }
 
@@ -123,8 +167,9 @@ padding: 40px;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
+	height: 1170px;
 	grid-gap: 50px;
-	padding: 60px;
+	padding: 110px;
 }
 
 .slide_block{
@@ -143,10 +188,9 @@ padding: 40px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-
-}
 .contact_block{
-	padding: 60px;
+	padding: 110px;
+	height: 785px;
 }
 
 form{
