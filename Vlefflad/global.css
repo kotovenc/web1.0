@@ -36,22 +36,71 @@ height: 103px;
 
 .About_block{
 	display: grid;
+	grid-template-columns: 1fr 2fr;
 	padding: 60px;
 	background-color: orange;
 	height: 300px;
 }
 
 .block_title > h2{
-	font-size: 30px;
+	font-size: 40px;
 }
 
-.bl
+.About_blocl > p{
+	font-size: 18px;
+}
+
+
 .services_block{
 	padding: 60px;
+	display: grid;
+	align-items: center;
+	padding: 60px;
+}
+
+.services_panel{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.serv_panel_item{
+	display: grid;
+	align-items: center;
+}
+
+.my_skills_block{
+	padding: 60px;
+	height: 500px; 
+	text-align: center;
+}
+
+.skills_plot{
+
+}
+.adobe_item{
+	width: 20px;
+}
+.adobe_img_block{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .portfolio_block{
+
 	padding: 60px;
+}
+
+.portfolio_block_panel{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.load_more_button{
+	
+}
 }
 .contact_block{
 	padding: 60px;
