@@ -1,0 +1,62 @@
+*{
+	margin: 0 auto;
+	padding:0;
+}
+
+.header_block{
+	height:500px;
+	padding: 60px;
+	margin-top: 50px;
+}
+
+.header_logo{
+display: grid;
+justify-content: left;
+}
+.header_title{
+height: 103px;
+}
+
+.header_menu{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 200px auto 60px 80px 80px 80px 80px 80px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+	height: 50px;
+}
+
+.menu_item{
+	display: grid;
+	margin: 15px 15px;
+}
+
+.About_block{
+	display: grid;
+	padding: 60px;
+	background-color: orange;
+	height: 300px;
+}
+
+.block_title > h2{
+	font-size: 30px;
+}
+
+.bl
+.services_block{
+	padding: 60px;
+}
+
+.portfolio_block{
+	padding: 60px;
+}
+.contact_block{
+	padding: 60px;
+
+}
+.service_block{
+	height: 300px;
+}
