@@ -7,7 +7,8 @@
   position: fixed;
   width: 100%;
   margin-top: -77px;
-  background-color: #ECEBE4;
+  background-color: white;
+  border-bottom: 8px solid #E3E8EF;
   height: 77px;
 }
 
@@ -33,18 +34,26 @@
 }
 
 .about_us {
-  height: 800px;
-  background-color: #FFAD5A;
+  height: 700px;
+  background-color: #9FB5D2;
 }
 
 .portfolio {
-  height: 800px;
-  background-color: #A6621D;
+  height: 700px;
+  background-color: #7191BA;
 }
 
 .footer {
-  //position: absolute;
-  //bottom: 0px;
-  background-color: black;
-  height: 100px;
+  padding-top: 30px;
+  height: 47px;
+  background-color: #E3E8EF;
+  border-top: 8px solid white;
+  color: white;
+  text-align: center;
 }
+
+
+-------------------------------Colors-----------------------------------------
+#5C7CA5	#53657C	#1E406B	#8DABD2	#9FB5D2
+
+#FBCD83	#BCA279	#A3752A	#FDDAA2	#FDE4BA
