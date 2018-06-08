@@ -61,3 +61,40 @@ body {
   right: 185px;
   //margin-bottom: 15px;
 }
+
+.girls {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  margin-top: -92px;
+}
+
+.main {
+  font-family: "Gilroy";
+}
+
+.sport {
+  font-size: 86px;
+  color: rgb(35, 137, 255);
+  background: linear-gradient(-180deg, #3333ff 33%, #3366ff 66%, #3399ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.929;
+  -moz-transform: matrix( 0.7415214903197,0,0,0.74194010474875,0,0);
+  -webkit-transform: matrix( 0.7415214903197,0,0,0.74194010474875,0,0);
+  -ms-transform: matrix( 0.7415214903197,0,0,0.74194010474875,0,0);
+  position: absolute;
+  left: 771.878px;
+  top: 193.485px;
+  z-index: 156;
+}
+
+.legs {
+  position: absolute;
+  left: 842.878px;
+  top: 242.485px;
+  font-size: 167px;
+  color: #FFFFFF;
+}
