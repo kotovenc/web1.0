@@ -76,7 +76,7 @@ body {
 .sport {
   font-size: 86px;
   color: rgb(35, 137, 255);
-  background: linear-gradient(-180deg, #3333ff 33%, #3366ff 66%, #3399ff);
+  background: linear-gradient(-180deg, #6333ff 33%, #3366ff 66%, #3399ff);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -97,4 +97,55 @@ body {
   top: 242.485px;
   font-size: 167px;
   color: #FFFFFF;
+}
+
+.e-mail {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgb(83, 39, 255);
+  background-color: inherit;
+  position: absolute;
+  left: 879px;
+  top: 524px;
+  width: 265px;
+  height: 30px;
+  z-index: 139;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.name {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgb(83, 39, 255);
+  background-color: inherit;
+  position: absolute;
+  left: 880px;
+  top: 458px;
+  width: 288px;
+  height: 30px;
+  z-index: 138;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.Rounded_Rectangle_1 {
+  border-radius: 43px;
+  background-image: -moz-linear-gradient( -83deg, rgb(83,39,255) 0%, rgb(17,174,255) 100%);
+  background-image: -webkit-linear-gradient( -83deg, rgb(83,39,255) 0%, rgb(17,174,255) 100%);
+  background-image: -ms-linear-gradient( -83deg, rgb(83,39,255) 0%, rgb(17,174,255) 100%);
+  border-color: #0099ff;
+  position: absolute;
+  left: 843px;
+  top: 594px;
+  width: 401px;
+  height: 90px;
+  z-index: 146;
+  font-family: "Gilroy";
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.Rounded_Rectangle_1:focus {
+  outline: none;
 }
