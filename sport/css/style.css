@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Gilroy";
 }
 
 @font-face {
@@ -155,6 +156,40 @@ body {
 .main1 {
   height: 900px;
   border: 3px solid blue;
+}
+
+.T0_main1 {
+  position: absolute;
+  left: 270px;
+  top: 964px;
+  font-size: 59px;
+  color: #FFFFFF;
+}
+
+.T1_main1 {
+  position: absolute;
+  background: linear-gradient(-180deg, #6333ff 33%, #3366ff 66%, #3399ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.929;
+  -moz-transform: matrix( 0.7415214903197,0,0,0.74194010474875,0,0);
+  -webkit-transform: matrix( 0.7415214903197,0,0,0.74194010474875,0,0);
+  -ms-transform: matrix( 0.7415214903197,0,0,0.74194010474875,0,0);
+  font-size: 102px;
+  left: 205px;
+  top: 1020px;
+}
+
+.Hren {
+  position: absolute;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Gilroy Ligt";
+  left: 285px;
+  top: 1120px;
 }
 
 .main2 {
