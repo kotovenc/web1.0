@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1224px);
+@media only screen and (max-width: 1366px){
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -282,3 +282,4 @@ form > div > input[type="text"]{
 }
 
 
+}

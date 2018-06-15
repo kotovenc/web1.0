@@ -1,292 +1,292 @@
-html {
-    scroll-behavior: smooth
+@media (min-width: 1368px){
+	html {
+	    scroll-behavior: smooth
+	}
+
+	*{
+		margin: 0 auto;
+		padding:0;
+	}
+
+	p{
+		font-family: fantasy;
+	}
+
+	h1{
+		font-family: "Arial Black";
+		font-size: 70px;
+	}
+
+	.logo_image{
+		height: 50px;
+		//border: 2px dotted red;
+	}
+
+	.header_block{
+		box-sizing: border-box;
+		height:750px;
+		padding: 110px;
+		background-image: url("img/header_bg.png");
+		//margin-top: 50px;
+		//border: 3px dotted red;
+	}
+
+	.hero_img{
+		z-index: 0;
+		position: absolute;
+		left: 1000px;
+		top: 100px;
+		width: 600px;
+
+	}
+
+	.header_logo{
+		margin-top:10px;
+		display: grid;
+		height: 50px;
+		justify-content: left;
+	}
+
+	.header_title{
+		height: 103px;
+	}
+
+	.know-hire_buttons{
+		//border: 3px dotted red;
+		margin-top: 100px;
+	}
+
+	.header_menu{
+		z-index: 100;
+		display: grid;
+		box-sizing: border-box;
+		grid-template-rows: 1fr;
+		grid-template-columns: 200px auto 60px 80px 80px 80px 80px 80px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: rgba(255,255,255, 0.85);
+		box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		height: 100px;
+	}
+
+	.menu_item{
+		display: grid;
+		margin: 25px 15px;
+		text-decoration: none;
+		color: black; 	
+	}
+
+	.header_menu > a{
+		text-decoration: none;
+	}
+
+	.About_block{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		padding: 110px;
+		background-color: white;
+		height: 675px;
+	}
+	.about_me_text > h2{
+		font-size: 40px;
+	}
+	.block_title > h2{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.About_block > p{
+		font-size: 18px;
+	}
+
+
+	.services_block{
+		padding: 110px;
+		display: grid;
+		height: 700px;
+		align-items: center;
+		background-color: #f6f6f6;
+		padding: 110px;
+	}
+
+	.services_panel{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 20px;
+		padding: 20px;
+	}
+
+	.serv_panel_item{
+		display: grid;
+		align-items: center;
+
+	}
+
+	.my_skills_block{
+		padding: 110px;
+		height: 750px; 
+		text-align: center;
+	}
+
+	.skills_plot{
+	padding: 40px;
+	}
+	.adobe_item{
+		width: 20px;
+	}
+	.adobe_img_block{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.service_block{
+		padding: 110px;
+		height: 300px;
+	}
+
+	.portfolio_block{
+		padding: 110px;
+		height: 1100px;
+		background-color: #f6f6f6;
+		text-align: center;
+	}
+
+	.portfolio_block_panel{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.load_more_button{
+		
+	}
+
+	.testimonials_block{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		height: 1170px;
+		grid-gap: 50px;
+		padding: 110px;
+	}
+
+	.slide_block{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.slide_item{
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+
+	}
+	.metric_panel{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.contact_block{
+		padding: 110px;
+		height: 785px;
+		background-color: grey;
+	}
+
+	form{
+		display: grid;
+		grid-template-columns: 1fr 50px 1fr;
+		grid-template-areas: "text_input .  email_input"
+							 "message  message	 message"
+							 		". submit .";
+		grid-row-gap: 20px;
+		grid-column-gap: 0px;
+		margin-top: 50px;
+		width: 800px;
+	}
+
+	form > div{
+		height: 60px;
+		margin: 0px;
+		width: 400px;
+	}
+
+	form > div > input{
+		height: 60px;
+		width: 100%;
+		margin: 0px;
+		font-size: 20px;
+		border: none;
+		padding-left: 10px;
+	}
+
+	form > div > label{
+		position: relative;
+		bottom: 40px;
+		left: 10px;
+		font-size: 20px;
+	}
+
+
+
+	form > div > textarea{
+		resize: none;
+		font-size: 20px;
+		height: 100px;
+		width: 100%;
+		border: none;
+		padding: 10px 0px 0px 10px;
+	}
+
+
+	form > div > input[type="submit"]{
+		padding: 0;
+		width: 60px;
+	}
+
+	form > div > input[type="text"]{
+	}
+
+
+
+
+	.text{
+		grid-area: text_input;
+	}
+
+	.email{
+		grid-area: email_input;
+	}
+
+	.message{
+		grid-area: message;
+		height: 100px;
+		width: 850px;
+	}
+
+	.submit{
+		grid-area: submit;
+		position:  relative;
+	}
+
+
+	.footer_root{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		height: 70px;
+	}
+
+	.social_link_block{
+		display: flex;
+		align-items: center;
+	}
+
+
+	.link_block{
+		display: flex;
+		align-items: center;
+	}
 }
-
-*{
-	margin: 0 auto;
-	padding:0;
-}
-
-p{
-	font-family: fantasy;
-}
-
-h1{
-	font-family: "Arial Black";
-	font-size: 70px;
-}
-
-.logo_image{
-	height: 50px;
-	//border: 2px dotted red;
-}
-
-.header_block{
-	box-sizing: border-box;
-	height:750px;
-	padding: 110px;
-	background-image: url("img/header_bg.png");
-	//margin-top: 50px;
-	//border: 3px dotted red;
-}
-
-.hero_img{
-	z-index: 0;
-	position: absolute;
-	left: 1000px;
-	top: 100px;
-	width: 600px;
-
-}
-
-.header_logo{
-	margin-top:10px;
-	display: grid;
-	height: 50px;
-	justify-content: left;
-}
-
-.header_title{
-	height: 103px;
-}
-
-.know-hire_buttons{
-	//border: 3px dotted red;
-	margin-top: 100px;
-}
-
-.header_menu{
-	z-index: 100;
-	display: grid;
-	box-sizing: border-box;
-	grid-template-rows: 1fr;
-	grid-template-columns: 200px auto 60px 80px 80px 80px 80px 80px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: rgba(255,255,255, 0.85);
-	box-shadow: 0 0 30px rgba(0,0,0,0.1);
-	height: 100px;
-}
-
-.menu_item{
-	display: grid;
-	margin: 25px 15px;
-	text-decoration: none;
-	color: black; 	
-}
-
-.header_menu > a{
-	text-decoration: none;
-}
-
-.About_block{
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	padding: 110px;
-	background-color: white;
-	height: 675px;
-}
-.about_me_text > h2{
-	font-size: 40px;
-}
-.block_title > h2{
-	font-size: 40px;
-	text-align: center;
-}
-
-.About_block > p{
-	font-size: 18px;
-}
-
-
-.services_block{
-	padding: 110px;
-	display: grid;
-	height: 700px;
-	align-items: center;
-	background-color: #f6f6f6;
-	padding: 110px;
-}
-
-.services_panel{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-gap: 20px;
-	padding: 20px;
-}
-
-.serv_panel_item{
-	display: grid;
-	align-items: center;
-
-}
-
-.my_skills_block{
-	padding: 110px;
-	height: 750px; 
-	text-align: center;
-}
-
-.skills_plot{
-padding: 40px;
-}
-.adobe_item{
-	width: 20px;
-}
-.adobe_img_block{
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.service_block{
-	padding: 110px;
-	height: 300px;
-}
-
-.portfolio_block{
-	padding: 110px;
-	height: 1100px;
-	background-color: #f6f6f6;
-	text-align: center;
-}
-
-.portfolio_block_panel{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-}
-
-.load_more_button{
-	
-}
-
-.testimonials_block{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	height: 1170px;
-	grid-gap: 50px;
-	padding: 110px;
-}
-
-.slide_block{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
-.slide_item{
-	display: grid;
-	grid-template-columns: 1fr 5fr;
-
-}
-.metric_panel{
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.contact_block{
-	padding: 110px;
-	height: 785px;
-	background-color: grey;
-}
-
-form{
-	display: grid;
-	grid-template-columns: 1fr 50px 1fr;
-	grid-template-areas: "text_input .  email_input"
-						 "message  message	 message"
-						 		". submit .";
-	grid-row-gap: 20px;
-	grid-column-gap: 0px;
-	margin-top: 50px;
-	width: 800px;
-}
-
-form > div{
-	height: 60px;
-	margin: 0px;
-	width: 400px;
-}
-
-form > div > input{
-	height: 60px;
-	width: 100%;
-	margin: 0px;
-	font-size: 20px;
-	border: none;
-	padding-left: 10px;
-}
-
-form > div > label{
-	position: relative;
-	bottom: 40px;
-	left: 10px;
-	font-size: 20px;
-}
-
-
-
-form > div > textarea{
-	resize: none;
-	font-size: 20px;
-	height: 100px;
-	width: 100%;
-	border: none;
-	padding: 10px 0px 0px 10px;
-}
-
-
-form > div > input[type="submit"]{
-	padding: 0;
-	width: 60px;
-}
-
-form > div > input[type="text"]{
-}
-
-
-
-
-.text{
-	grid-area: text_input;
-}
-
-.email{
-	grid-area: email_input;
-}
-
-.message{
-	grid-area: message;
-	height: 100px;
-	width: 850px;
-}
-
-.submit{
-	grid-area: submit;
-	position:  relative;
-}
-
-
-.footer_root{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
-	height: 70px;
-}
-
-.social_link_block{
-	display: flex;
-	align-items: center;
-}
-
-
-ink_block{
-	display: flex;
-	align-items: center;
-}
-
-
