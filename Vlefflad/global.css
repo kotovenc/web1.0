@@ -1,6 +1,5 @@
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    scroll-behavior: smooth
 }
 
 *{
@@ -23,20 +22,21 @@ h1{
 }
 
 .header_block{
-	display: grid;
-	grid-template-columns: 730px 1fr;
-	grid-gap: 50px;
 	box-sizing: border-box;
 	height:750px;
-	padding: 110px 5% 0px 5%;
+	padding: 110px;
 	background-image: url("img/header_bg.png");
 	//margin-top: 50px;
 	//border: 3px dotted red;
 }
 
 .hero_img{
-	width: auto;
-	height: 550px;
+	z-index: 0;
+	position: absolute;
+	left: 1000px;
+	top: 100px;
+	width: 600px;
+
 }
 
 .header_logo{
@@ -60,7 +60,7 @@ h1{
 	display: grid;
 	box-sizing: border-box;
 	grid-template-rows: 1fr;
-	grid-template-columns: 5% 120px auto 60px 80px 80px 80px 80px 5%;
+	grid-template-columns: 200px auto 60px 80px 80px 80px 80px 80px;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -249,6 +249,8 @@ form > div > input[type="text"]{
 }
 
 
+
+
 .text{
 	grid-area: text_input;
 }
@@ -268,6 +270,7 @@ form > div > input[type="text"]{
 	position:  relative;
 }
 
+
 .footer_root{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -276,6 +279,12 @@ form > div > input[type="text"]{
 }
 
 .social_link_block{
+	display: flex;
+	align-items: center;
+}
+
+
+ink_block{
 	display: flex;
 	align-items: center;
 }
