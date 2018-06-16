@@ -192,7 +192,10 @@ padding: 40px;
 .contact_block{
 	padding: 110px;
 	height: 785px;
-	background-color: grey;
+	//background-color: grey;
+	background-image: url("img/contact_bg.jpg");
+	background-size: cover;
+	border: 2px dotted red;
 }
 
 form{
