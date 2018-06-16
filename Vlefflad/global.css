@@ -43,12 +43,14 @@
 		padding-right: 20%;
 		margin-left: 0;
 		margin-right: auto;
+		padding: 200px 0px 0px 0px;
 		//border: 2px dotted green;
 	}
 
 	.hero_img_container{
 		margin-left: auto;
 		margin-right: 0;
+
 		//border: 3px dotted red;
 		text-align: right;
 	}
@@ -74,17 +76,57 @@
 		//border: 2px dotted red;
 	}
 
-	.header_title{
-		height: 103px;
+	.header_content {
+	
 	}
 
+	.header_title{
+	}
+
+	.header_title > h3 { 
+		color: grey;
+	 }
+
 	.know-hire_buttons{
-		//border: 3px dotted red;
-		margin-top: 100px;
+		display: inline-block;
+		padding: 10px 0px 0px 0px;
+		width: 95%;
+	}
+
+	.know_me_button {
+		background-color: white;
+		height: 50px;
+		width: 40%;
+		border: none;
+		font-family: "Arial Black";
+		font-size: 18px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
+
+	.hire_me_button {
+		background-color: unset;
+		height: 50px;
+		width: 40%;
+		border: solid  1px;
+		font-family: "Arial Black";
+		font-size: 18px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
+
+	.unknown_arrow {
+		display: block;
+		position: absolute;
+		top: 640px;
+		background-color: white;
+		height: 60px;
+		width: 60px;
+		border: solid  1px;
+		font-family: "Arial Black";
+		font-size: 18px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 	}
 
 	.header_menu{
-		
 		z-index: 100;
 		display: grid;
 		box-sizing: border-box;
@@ -131,7 +173,6 @@
 		margin-left: 5%;
 		margin-right: 5%;
 		grid-template-columns: 1fr 1fr;
-		//padding: 110px;
 		background-color: white;
 		//border: 3px dotted red;
 	}
@@ -158,21 +199,49 @@
 		padding-right: 20%;
 	}
 
-	.about_me_text > h2{
+	.about_block_title > h2{
 		font-size: 40px;
-		
+		text-transform: uppercase;
+
+	}
+
+	.about_block_title hr {
+		position: absolute;
+		width: 50px;
+		//border: none;
+		height: 2px;
+		color: black;
+		background-color: black;
 	}
 
 	.block_title > h2{
+		text-transform: uppercase;
 		font-size: 40px;
 		text-align: center;
 	}
+
+	.block_title > hr { 
+		width: 50px;
+		//border: none;
+		height: 2px;
+		color: black;
+		background-color: black;
+	 }
 
 	.about_container > p{
 		font-size: 18px;
 	}
 
-
+	.download_button{
+		background-color: unset;
+		height: 50px;
+		width: 50%;
+		border: solid  1px;
+		font-family: "Arial Black";
+		font-size: 18px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+		margin: 30px 0px 0px 0px;
+	}
 	.services_block{
 		min-width: 600px;
 		box-sizing: border-box;
@@ -241,7 +310,14 @@
 	}
 
 	.load_more_button{
-		
+		background-color: white;
+		height: 50px;
+		width: 150px;
+		border: none;
+		font-family: "Arial Black";
+		font-size: 18px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+
 	}
 
 	.testimonials_block{
@@ -250,7 +326,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
-		height: 1170px;
+		height: 570px;
 		grid-gap: 50px;
 		padding: 110px;
 	}
@@ -281,9 +357,13 @@
 		background-size: cover;
 	}
 
+	.contact_content {
+		border:2px dotted red;
+	}
+
 	form{
 		display: grid;
-		grid-template-columns: 1fr 50px 1fr;
+		grid-template-columns: 1fr 100px 1fr;
 		grid-template-areas: "text_input .  email_input"
 							 "message  message	 message"
 							 		". submit .";
@@ -296,42 +376,39 @@
 	form > div{
 		height: 60px;
 		margin: 0px;
-		width: 400px;
+		width: 100%;
 	}
 
 	form > div > input{
 		height: 60px;
-		width: 100%;
-		margin: 0px;
+		min-width: 97%;
+		margin: 0px ;
 		font-size: 20px;
 		border: none;
-		padding-left: 10px;
+		padding: 0px 0px 0px 10px;
 	}
 
-	form > div > label{
-		position: relative;
-		bottom: 40px;
-		left: 10px;
-		font-size: 20px;
-	}
-
-	form{
-		border:2px dotted red;
-	}
 
 	form > div > textarea{
 		resize: none;
 		font-size: 20px;
 		height: 100px;
-		width: 100%;
+		width: 99%;
 		border: none;
 		padding: 10px 0px 0px 10px;
+
 	}
 
 
-	form > div > input[type="submit"]{
+	form > div > button[type="submit"] {
 		padding: 0;
-		width: 60px;
+		width: 100%;
+		background-color: white;
+		height: 50px;
+		border: none;
+		font-family: "Arial Black";
+		font-size: 16px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 	}
 
 	form > div > input[type="text"]{
@@ -351,7 +428,7 @@
 	.message{
 		grid-area: message;
 		height: 100px;
-		width: 850px;
+		width: 100%;
 	}
 
 	.submit{
@@ -359,12 +436,25 @@
 		position:  relative;
 	}
 
+	.top_arrow {
+		position: relative;
+		left: 1100px;
+		bottom: 100px;
+		width: 50px;
+		background-color: white;
+		height: 50px;
+		border: none;
+		font-family: "Arial Black";
+		font-size: 16px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
 
 	.footer_root{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
 		height: 70px;
+		color: white;
 	}
 
 	.social_link_block{
