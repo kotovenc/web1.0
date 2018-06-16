@@ -1,90 +1,95 @@
 <!DOCTYPE html>
 <html>	
 <head>
-	<title>Oenrique</title>
+	<title>Ogurchique</title>
 	<link rel="stylesheet" type="text/css" href="global.css">
-	<link rel="stylesheet" type="text/css" href="media1224px.css">
 </head>
 <body>
 	<div class="header_menu">
-		<div></div>
 		<div class="header_logo">
 			<img class="logo_image" src="img/logo.png" name="header_logo" >
 			<p>OGURCHIQUE</p>
 		</div>
-		<div><!--Для пространства между лого и меню--></div>
-		<a href="#home"><div class="menu_item">Home</div></a>
-		<a href="#test"><div class="menu_item">About</div></a>
-		<a href="#service"><div class="menu_item">Service</div></a>
-		<a href="#portfolio"><div class="menu_item">Portfolio</div></a>
-		<a href="#contact"><div class="menu_item">Contact</div></a>
+		<div class="menu_container">
+			<a class="menu_item"	 href="#home"><div>Home</div></a>
+			<a class="menu_item"	 href="#test"><div>About</div></a>
+			<a class="menu_item"	 href="#service"><div>Service</div></a>
+			<a class="menu_item"	 href="#portfolio"><div>Portfolio</div></a>
+			<a class="menu_item"	 href="#contact"><div>Contact</div></a>
+		</div>
 	</div>
 	<a id="home"></a>
-	<div class="header_block">	<!--Первый общий блок. Тут картинка мужика на фоне-->	
-		<div>	
-			<div class="header_title">
-				<h1>Маринованный огурчик</h1>
-				<h3>Очень маринованный/Очень огурчик</h3>
+	<div class="header_block">	<!--Первый общий блок. Тут картинка мужика на фоне-->
+		<div class="header_container">	
+			<div class = "header_content">	
+				<div class="header_title">
+					<h1>Маринованный огурчик</h1>
+					<h3>Очень маринованный/Очень огурчик</h3>
+				</div>
+				<div class="know-hire_buttons">
+					<button>Know me</button>
+					<button>Hire me</button>
+					<div class="unknown_arrow"><img src="#" name="down arrow"></div>
+				</div>
 			</div>
-			<div class="know-hire_buttons">
-				<button>Know me</button>
-				<button>Hire me</button>
-				<div class="unknown_arrow"><img src="#" name="down arrow"></div>
+			<div class="hero_img_container">	
+				<img class="hero_img" src="img/cuc.png" name="hero_img" >
 			</div>
 		</div>
-	<div>	
-		<img class="hero_img" src="img/cuc.png" name="hero_img" >
 	</div>
-	</div>
-	<hr>
+	
 	<a id = "test"></a>
-	<div class="About_block">	<!--Второй общий блок. About. -->
-		<div class="about_me_text">
-			<h2>Know more about me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="about_block">	<!--Второй общий блок. About. -->
+		<div class="about_container">
+			<div class="about_me_text">
+				<h2>Know more about me</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="about_block_img_container"><img class="about_block_img" src="img/about_me.png" name="about_me_img"></div>
+			<div class="download_button"><button>Download my CW</button></div>
 		</div>
-		<div class="about_block_img"><img src="#" name="about_me_img"></div>
-		<div class="download_button"><button>Download my CW</button></div>
 	</div>
-	<hr>
-			<a id="service"></a>
+	
+	<a id="service"></a>
 	<div class="services_block">	<!--Третий общий блок. Services-->
-		<div class="block_title">
-			<h2>Services</h2>
-		</div>
-		<div class="services_panel">
-			<div class="serv_panel_item">
-				<img src="#" name="User Research">
-				<p>User Research</p>
+		<div class="services_container">
+			<div class="block_title">
+				<h2>Services</h2>
 			</div>
-			<div class="serv_panel_item">
-				<img src="#" name="IA and Wireframes">
-				<p>IA and Wireframes</p>
-			</div>
-			<div class="serv_panel_item">
-				<img src="#" name="User Testing">
-				<p>User Testing</p>
-			</div>
-			<div class="serv_panel_item">
-				<img src="#" name="UI">
-				<p>Looks and Fill design (UI)</p>
-			</div>
-			<div class="serv_panel_item">
-				<img src="#" name="Delivery">
-				<p>Delivery</p>
-			</div>
-			<div class="serv_panel_item">
-				<img src="#" name="Integration Support">
-				<p>Integration Support</p>
+			<div class="services_panel">
+				<div class="serv_panel_item">
+					<img src="#" name="User Research">
+					<p>User Research</p>
+				</div>
+				<div class="serv_panel_item">
+					<img src="#" name="IA and Wireframes">
+					<p>IA and Wireframes</p>
+				</div>
+				<div class="serv_panel_item">
+					<img src="#" name="User Testing">
+					<p>User Testing</p>
+				</div>
+				<div class="serv_panel_item">
+					<img src="#" name="UI">
+					<p>Looks and Fill design (UI)</p>
+				</div>
+				<div class="serv_panel_item">
+					<img src="#" name="Delivery">
+					<p>Delivery</p>
+				</div>
+				<div class="serv_panel_item">
+					<img src="#" name="Integration Support">
+					<p>Integration Support</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<hr>
+	
 	<div class="my_skills_block">
 		<div class="block_title">
 			<h2>My Skills</h2>
@@ -97,7 +102,7 @@
 			<div class="adobe_item"><img src="#" name="Ai"></div>
 		</div>
 	</div>
-	<hr>
+	
 			<a id="portfolio"></a>
 	<div class="portfolio_block">
 		<div class="block_title"><h2>Portfolio</h2></div>
@@ -113,7 +118,7 @@
 			<button>Load More</button>
 		</div>
 	</div>
-	<hr>
+	
 	<div class="testimonials_block">
 		<div class="block_title">
 			<h2>Testimonials</h2>
@@ -176,13 +181,13 @@
 			</div>
 		</div>
 	</div>
-	<hr>
+	
 		<a id="contact"></a>
 	<div class="contact_block">
 		<div class="block_title">
 			<h2>Say Hellow!</h2>
 		</div>
-		<form>
+		<!--form>
 				<div class="text">
 					<input  type="text" id = "name" name="Name" placeholder="Name">
 				</div>
@@ -195,7 +200,7 @@
 				<div class="submit">
 					<input type="submit" value="Send">
 				</div>
-		</form>
+		</form-->
 		<button class="top_arrow"><img src="#" name="top arrow"></button>
 		<hr>
 		<footer>

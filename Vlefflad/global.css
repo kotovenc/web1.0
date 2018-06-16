@@ -1,4 +1,4 @@
-@media (min-width: 1367px){
+
 	html {
 	    scroll-behavior: smooth
 	}
@@ -14,7 +14,7 @@
 
 	h1{
 		font-family: "Arial Black";
-		font-size: 70px;
+		font-size: 40px;
 	}
 
 	.logo_image{
@@ -23,32 +23,55 @@
 	}
 
 	.header_block{
-		display: grid;
-		grid-template-columns: 730px 1fr;
-		grid-gap: 50px;
+		min-width: 600px;
 		box-sizing: border-box;
 		height:750px;
-		padding: 110px;
+		padding:5%;
+		padding-top:100px;
 		background-image: url("img/header_bg.png");
-		//margin-top: 50px;
+	}
+
+	.header_container{
+		display: grid;
+		//margin:5%;
+		height: 650px;
+		grid-template-columns: 1fr 1fr;
 		//border: 3px dotted red;
 	}
 
+	.header_content{
+		padding-right: 20%;
+		margin-left: 0;
+		margin-right: auto;
+		//border: 2px dotted green;
+	}
+
+	.hero_img_container{
+		margin-left: auto;
+		margin-right: 0;
+		//border: 3px dotted red;
+		text-align: right;
+	}
 
 	.hero_img{
+		display: inline-block;
 		z-index: 0;
-		position: absolute;
-		left: 1000px;
-		top: 100px;
-		width: 600px;
-
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width:100%;
+		max-height:100%;
+		//border: 3px dotted blue;
 	}
 
 	.header_logo{
 		margin-top:10px;
+		margin-right: auto;
+		margin-left: 0;
 		display: grid;
 		height: 50px;
-		justify-content: left;
+		justify-content: left; 
+		//border: 2px dotted red;
 	}
 
 	.header_title{
@@ -61,22 +84,33 @@
 	}
 
 	.header_menu{
+		
 		z-index: 100;
 		display: grid;
 		box-sizing: border-box;
+		padding-left: 5%;
+		padding-right: 5%;
 		grid-template-rows: 1fr;
-		grid-template-columns: 5% 120px auto 60px 80px 80px 80px 80px 5%;
+		grid-template-columns: 1fr 2fr;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		background-color: rgba(255,255,255, 0.85);
 		box-shadow: 0 0 30px rgba(0,0,0,0.1);
 		height: 100px;
+		//border: 2px dotted blue;
+	}
+
+	.menu_container{
+		margin-left: auto;
+		margin-right: 0;
 	}
 
 	.menu_item{
-		display: grid;
-		margin: 25px 15px;
+		display: inline-block;
+		margin-top: 25px;
+		margin-left: 15px;
+		//border: 2px dotted blue;
 		text-decoration: none;
 		color: black; 	
 	}
@@ -85,27 +119,63 @@
 		text-decoration: none;
 	}
 
-	.About_block{
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-		padding: 110px;
-		background-color: white;
+	.about_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		height: 675px;
+		padding-top:100px;
 	}
+
+	.about_container{
+		display: grid;
+		margin-left: 5%;
+		margin-right: 5%;
+		grid-template-columns: 1fr 1fr;
+		//padding: 110px;
+		background-color: white;
+		//border: 3px dotted red;
+	}
+
+	.about_block_img_container{
+		//padding: 0;
+		//margin: 0;
+		margin-left: auto;
+		margin-right: 0;
+		vertical-align: middle;
+		//border: 2px dotted green;
+	}
+
+	.about_block_img{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width:100%;
+		max-height:auto;
+	}
+
+	.about_me_text{
+		//border: 2px dotted blue;
+		padding-right: 20%;
+	}
+
 	.about_me_text > h2{
 		font-size: 40px;
+		
 	}
+
 	.block_title > h2{
 		font-size: 40px;
 		text-align: center;
 	}
 
-	.About_block > p{
+	.about_container > p{
 		font-size: 18px;
 	}
 
 
 	.services_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		padding: 110px;
 		display: grid;
 		height: 700px;
@@ -129,6 +199,8 @@
 	}
 
 	.my_skills_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		padding: 110px;
 		height: 750px; 
 		text-align: center;
@@ -147,11 +219,15 @@
 	}
 
 	.service_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		padding: 110px;
 		height: 300px;
 	}
 
 	.portfolio_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		padding: 110px;
 		height: 1100px;
 		background-color: #f6f6f6;
@@ -169,6 +245,8 @@
 	}
 
 	.testimonials_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
@@ -194,6 +272,8 @@
 	}
 
 	.contact_block{
+		min-width: 600px;
+		box-sizing: border-box;
 		padding: 110px;
 		height: 785px;
 		//background-color: grey;
@@ -235,7 +315,9 @@
 		font-size: 20px;
 	}
 
-
+	form{
+		border:2px dotted red;
+	}
 
 	form > div > textarea{
 		resize: none;
