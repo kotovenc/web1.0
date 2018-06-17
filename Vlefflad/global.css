@@ -1,6 +1,6 @@
 
 	html {
-	    scroll-behavior: smooth
+	    scroll-behavior: smooth;
 	}
 
 	*{
@@ -19,7 +19,6 @@
 
 	.logo_image{
 		height: 50px;
-		//border: 2px dotted red;
 	}
 
 	.header_block{
@@ -29,14 +28,14 @@
 		padding:5%;
 		padding-top:100px;
 		background-image: url("img/header_bg.png");
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.header_container{
 		display: grid;
-		//margin:5%;
 		height: 650px;
 		grid-template-columns: 1fr 1fr;
-		border: 3px dotted blue;
 	}
 
 	.header_content{
@@ -44,14 +43,13 @@
 		margin-left: 0;
 		margin-right: auto;
 		padding: 200px 0px 0px 0px;
-		border: 2px dotted green;
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.hero_img_container{
-		//margin-left: auto;
-		//margin-right: 0;
-
-		border: 3px dotted red;
+		margin-left: auto;
+		margin-right: 0;
 		text-align: right;
 	}
 
@@ -61,9 +59,9 @@
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
-		max-width:100%;
-		max-height:100%;
-		border: 3px dotted blue;
+		max-width: 100%;
+		max-height: 100%;
+		width: 100%;
 	}
 
 	.header_logo{
@@ -72,19 +70,19 @@
 		margin-left: 0;
 		display: grid;
 		height: 50px;
-		justify-content: left; 
-		//border: 2px dotted red;
-	}
+}
 
-	.header_content {
-	
-	}
-
-	.header_title{
-	}
 
 	.header_title > h3 { 
-		color: grey;
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
+		opacity: 0.54;
+	 }
+
+	.header_title > h1 { 
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
+		font-size: 50px;
 	 }
 
 	.know-hire_buttons{
@@ -96,31 +94,35 @@
 	.know_me_button {
 		outline: none;
 		background-color: white;
-		height: 50px;
-		width: 40%;
-		border: none;
+		height: 51px;
+		width: 191px;
 		font-family: "Arial Black";
 		font-size: 18px;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.know_me_button:hover {
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
 	}
 
 	.hire_me_button {
 		outline: none;
 		background-color: unset;
 		height: 50px;
-		width: 40%;
+		width: 190px;
 		border: solid  1px;
-		font-family: "Arial Black";
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 		font-size: 18px;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 	}
 
 	.hire_me_button:hover {
 		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2), 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
 	}
 
 	.unknown_arrow {
@@ -130,10 +132,18 @@
 		background-color: white;
 		height: 60px;
 		width: 60px;
-		border: solid  1px;
 		font-family: "Arial Black";
 		font-size: 18px;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
+
+	.unknown_arrow:hover {
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2), 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
+	}
+
+	.unknown_arrow img {
+		width: 20px;
 	}
 
 	.header_menu{
@@ -150,19 +160,21 @@
 		background-color: rgba(255,255,255, 0.85);
 		box-shadow: 0 0 30px rgba(0,0,0,0.1);
 		height: 100px;
-		//border: 2px dotted blue;
+		font-family: 'Asap', sans-serif;
+		text-transform: uppercase;
+		color: #4d4d4d;
 	}
 
 	.menu_container{
 		margin-left: auto;
 		margin-right: 0;
+
 	}
 
 	.menu_item{
 		display: inline-block;
 		margin-top: 25px;
 		margin-left: 15px;
-		//border: 2px dotted blue;
 		text-decoration: none;
 		color: black; 	
 	}
@@ -176,6 +188,8 @@
 		box-sizing: border-box;
 		height: 675px;
 		padding-top:100px;
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.about_container{
@@ -184,16 +198,12 @@
 		margin-right: 5%;
 		grid-template-columns: 1fr 1fr;
 		background-color: white;
-		//border: 3px dotted red;
 	}
 
 	.about_block_img_container{
-		//padding: 0;
-		//margin: 0;
 		margin-left: auto;
 		margin-right: 0;
 		vertical-align: middle;
-		//border: 2px dotted green;
 	}
 
 	.about_block_img{
@@ -201,24 +211,29 @@
 		top: 50%;
 		transform: translateY(-50%);
 		max-width:100%;
-		max-height:auto;
 	}
 
 	.about_me_text{
-		//border: 2px dotted blue;
 		padding-right: 20%;
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
+	}
+
+	.about_me_text  p {
+		font-size: 16px;
+		font-family: 'Asap:400', sans-serif;
 	}
 
 	.about_block_title > h2{
 		font-size: 40px;
 		text-transform: uppercase;
-
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.about_block_title hr {
 		position: absolute;
 		width: 50px;
-		//border: none;
 		height: 2px;
 		color: black;
 		background-color: black;
@@ -228,19 +243,17 @@
 		text-transform: uppercase;
 		font-size: 40px;
 		text-align: center;
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.block_title > hr { 
 		width: 50px;
-		//border: none;
 		height: 2px;
-		color: black;
+		color: #4d4d4d;
 		background-color: black;
 	 }
 
-	.about_container > p{
-		font-size: 18px;
-	}
 
 	.download_button{
 		outline: none;
@@ -252,10 +265,13 @@
 		font-size: 18px;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 		margin: 30px 0px 0px 0px;
+		font-family: 'Asap:700', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.download_button:hover{
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
 	}
 	.services_block{
 		min-width: 600px;
@@ -266,20 +282,21 @@
 		align-items: center;
 		background-color: #f6f6f6;
 		padding: 110px;
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.services_panel{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
-		grid-gap: 20px;
-		padding: 20px;
+		grid-gap: 150px 250px;
+		padding: 60px;
 	}
 
 	.serv_panel_item{
 		display: grid;
 		align-items: center;
-
 	}
 
 	.my_skills_block{
@@ -291,7 +308,6 @@
 	}
 
 	.skills_plot{
-		border:2px dotted red;
 		padding: 40px;
 	}
 
@@ -331,14 +347,13 @@
 		display: grid;
 		margin-left: -10px;
 		margin-right: -10px;
-		//border: 2px dotted blue;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+		padding-top: 60px;
 	}
 
 	@media (min-width: 1070px){
 		.portfolio_container{
-			//border: 2px dotted red;
 			width: 960px;
 		}
 
@@ -346,7 +361,6 @@
 			width: 300px;
 			height: 250px;
 			margin: 10px;
-			//background-color: #212121;
 		}
 
 		.portfolio_block{
@@ -355,7 +369,6 @@
 	}
 	@media (max-width: 1069px){
 		.portfolio_container{
-			//border: 2px dotted red;
 			width: 540px;
 		}
 
@@ -363,7 +376,6 @@
 			width: 170px;
 			height: 150px;
 			margin: 7px;
-			//background-color: #212121;
 		}
 
 		.portfolio_block{
@@ -374,23 +386,27 @@
 	.port_image{
 		width: 100%;
 		height: 100%;
-		//border: 2px dotted red;
 	}
 
 	.load_more_button{
 		outline: none;
 		background-color: white;
 		height: 50px;
-		width: 150px;
+		width: 180px;
+		margin-top: 10px;
 		border: none;
 		font-family: "Arial Black";
 		font-size: 18px;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+		font-family: 'Asap', sans-serif;
+		color: #4d4d4d;
+		text-transform: uppercase;
 
 	}
 
 	.load_more_button:hover{
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
 	}
 
 	.port_image:hover{
@@ -407,14 +423,17 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
-		height: 570px;
+		height: 670px;
 		grid-gap: 50px;
 		padding: 110px;
+		font-family: 'Asap:400', sans-serif;
+		color: #4d4d4d;
 	}
 
 	.slide_block{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+
 	}
 
 	.slide_item{
@@ -423,10 +442,7 @@
 
 	}
 	.metric_panel{
-		//display: grid;
 		vertical-align: bottom;
-		//grid-template-rows: 1fr;
-		//grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 
 	.metric_panel_item{
@@ -436,16 +452,32 @@
 
 	.contact_block{
 		min-width: 600px;
+		width: 100%;
 		box-sizing: border-box;
-		padding: 110px;
-		height: 785px;
-		//background-color: grey;
+		padding: 110px 5% 0px 5%;
+		height: 680px;
 		background-image: url("img/contact_bg.jpg");
 		background-size: cover;
+		font-family: 'Open Sans';
+		font-weight: 1px;
+	}
+
+
+	.contact_content {
+		min-width: 600px;
+		color: white;
+	}
+
+	.contact_content hr {
+		width: 50px;
+		height: 2px;
+		background-color: white;
 	}
 
 	.contact_content {
-		border:2px dotted red;
+		text-align: center;
+		font-size: 22px;
+		text-transform: uppercase;
 	}
 
 	form{
@@ -454,21 +486,23 @@
 		grid-template-areas: "text_input .  email_input"
 							 "message  message	 message"
 							 		". submit .";
-		grid-row-gap: 20px;
+		grid-row-gap: 35px;
 		grid-column-gap: 0px;
 		margin-top: 50px;
-		width: 800px;
+		padding-bottom: 100px;
+		width: 100%;
+		max-width: 800px;
 	}
 
 	form > div{
-		height: 60px;
+		height: 100%;
 		margin: 0px;
 		width: 100%;
 	}
 
 	form > div > input{
 		height: 60px;
-		min-width: 97%;
+		min-width: 98%;
 		margin: 0px ;
 		font-size: 20px;
 		border: none;
@@ -493,9 +527,18 @@
 		background-color: white;
 		height: 50px;
 		border: none;
-		font-family: "Arial Black";
+		font-family: "Open Sans";
 		font-size: 16px;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+		color: #4d4d4d;
+		text-align: center;
+	}
+
+	form > div > button[type="submit"] > img{
+		width: 12px;
+		height: auto;
+		margin: 0px 0px 0px 5px;
+		opacity: 0.8;
 	}
 
 	form > div > input[type="text"]{
@@ -525,22 +568,32 @@
 
 	.top_arrow {
 		position: relative;
-		left: 1100px;
-		bottom: 100px;
+		left: 500px;
+		bottom: 180px;
 		width: 50px;
 		background-color: white;
 		height: 50px;
 		border: none;
-		font-family: "Arial Black";
-		font-size: 16px;
+		font-family: "FontAwesome";
+		font-size: 22px;
+		font-stretch: extra-expanded;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
+
+	.top_arrow:hover {
+		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2), 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
+	}
+
+	.top_arrow img{
+		width: 20px;
 	}
 
 	.footer_root{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
-		height: 70px;
+		height: 40px;
 		color: white;
 	}
 
@@ -552,9 +605,3 @@
 	.social_image{
 		margin: 5px;
 	}
-
-	.link_block{
-		display: flex;
-		align-items: center;
-	}
-}
