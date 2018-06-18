@@ -369,12 +369,17 @@
 		min-width: 600px;
 		box-sizing: border-box;
 		padding: 110px;
+		padding-left: 5%;
+		padding-right: 5%;
 		height: 750px; 
 		text-align: center;
 	}
 
+	.skills_container{
+	}
+
 	.skills_plot{
-		padding: 40px;
+		padding-top: 40px;
 	}
 
 	.skills_img{

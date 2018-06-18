@@ -28,7 +28,7 @@ function closest (num, arr, incr) {
 $("#ba").click(function() {
 	var $container = $('html');
 	currentId = closest($container.scrollTop(), targets, 1)
-    currentId++;
+    if(currentId < targets.length) currentId++;
 
     var $scrollTo = $(targets[currentId]);
     
@@ -42,7 +42,7 @@ $("#ta").click(function() {
 	var $container = $('html');
 	currentId = closest($container.scrollTop(), targets, -1)
     
-    currentId--;
+    if(currentId > 0) currentId--;
 
     var $scrollTo = $(targets[currentId]);
     
