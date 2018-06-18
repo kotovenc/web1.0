@@ -5,9 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="global.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 <body>
+	<script src="js/menu.js"></script>
 	<div class="header_menu">
+		<div class="header_menu_bg"></div>
 		<div class="header_logo">
 			<img class="logo_image" src="img/logo.png" name="header_logo" >
 			<p>OGURCHIQUE</p>
@@ -24,14 +27,14 @@
 	<div class="header_block">	<!--Первый общий блок. Тут картинка мужика на фоне-->
 		<div class="header_container">	
 			<div class = "header_content">	
-				<div class="header_title">
+				<div class="header_title" id="h">
 					<h1>Маринованный огурчик</h1>
 					<h3>Очень маринованный / Очень вкусный огурчик</h3>
 				</div>
 				<div class="know-hire_buttons">
 					<button class="know_me_button"><b>Познай огурчик</b></button>
 					<button class="hire_me_button"><b>Вкуси огурчик</b></button>
-					<a href="#contact"><button  class="unknown_arrow"><img src="img/down.png" name="down arrow"></button></a>
+					<button  class="bottom_arrow" id="ba"><img src="img/down.png" name="down arrow"></button>
 				</div>
 			</div>
 			<div class="hero_img_container">	
@@ -95,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-	
+	<a id="skills"></a>
 	<div class="my_skills_block">
 		<div class="block_title">
 			<hr>
@@ -122,7 +125,7 @@
 			<button class="load_more_button"><b>Load More</b></button>
 		</div>
 	</div>
-	
+	<a id="testimonials"></a>
 	<div class="testimonials_block">
 		<div class="block_title">
 			<hr>
@@ -203,10 +206,10 @@
 						<textarea placeholder="Message"></textarea>
 					</div>
 					<div class="submit">
-						<button type="submit"><b>SEND</b><img src="img/send-button.png"></button>
+						<button type="submit_button"><b>SEND</b><img src="img/send-button.png"></button>
 					</div>
 			</form>
-			<a href="#home"><button class="top_arrow"><img src="img/up.png" name="top arrow"></button></a>
+			<button class="top_arrow" id="ta"><img src="img/up.png" name="top arrow"></button>
 		</div>
 		<hr>
 		<footer>
@@ -225,4 +228,5 @@
 		</footer>
 	</div>
 </body>
+<script src="js/arrows.js"></script>
 </html>

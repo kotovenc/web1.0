@@ -65,6 +65,7 @@
 	}
 
 	.header_logo{
+		z-index: 100;
 		margin-top:10px;
 		margin-right: auto;
 		margin-left: 0;
@@ -93,6 +94,7 @@
 
 	.know_me_button {
 		outline: none;
+		border: none;
 		background-color: white;
 		height: 51px;
 		width: 191px;
@@ -106,6 +108,10 @@
 	.know_me_button:hover {
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
 		color: black;
+	}
+
+	.know_me_button:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
 	}
 
 	.hire_me_button {
@@ -125,26 +131,65 @@
 		color: black;
 	}
 
-	.unknown_arrow {
-		display: block;
-		position: absolute;
-		top: 640px;
+	.hire_me_button:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
+	}
+
+	.top_arrow {
+		outline: none;
+		border: none;
+		position: fixed;
+		left: 10px;
+		bottom: 70px;
+		width: 50px;
 		background-color: white;
-		height: 60px;
-		width: 60px;
-		font-family: "Arial Black";
-		font-size: 18px;
+		height: 50px;
+		font-family: "FontAwesome";
+		font-size: 22px;
+		font-stretch: extra-expanded;
 		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 	}
 
-	.unknown_arrow:hover {
-		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2), 0px 5px 10px rgba(0,0,0,0.3);
+	.top_arrow:hover {
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3), 0px 5px 10px rgba(0,0,0,0.3);
 		color: black;
 	}
 
-	.unknown_arrow img {
+	.top_arrow:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
+	}
+	.top_arrow img{
 		width: 20px;
 	}
+
+	.bottom_arrow {
+		outline: none;
+		border: none;
+		position: fixed;
+		left: 10px;
+		bottom: 10px;
+		width: 50px;
+		background-color: white;
+		height: 50px;
+		font-family: "FontAwesome";
+		font-size: 22px;
+		font-stretch: extra-expanded;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	}
+
+	.bottom_arrow:hover {
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3), 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
+	}
+
+	.bottom_arrow:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
+	}
+	.bottom_arrow img{
+		margin-top: 10px; 
+		width: 20px;
+	}
+
 
 	.header_menu{
 		z-index: 100;
@@ -157,27 +202,37 @@
 		position: fixed;
 		top: 0;
 		width: 100%;
-		background-color: rgba(255,255,255, 0.85);
-		box-shadow: 0 0 30px rgba(0,0,0,0.1);
 		height: 100px;
 		font-family: 'Asap', sans-serif;
 		text-transform: uppercase;
 		color: #4d4d4d;
 	}
 
+	.header_menu_bg{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 99;
+		opacity: 0;
+		background-color: rgba(255,255,255, 0.85);
+		box-shadow: 0 0 30px rgba(0,0,0,0.1);
+	}
+
 	.menu_container{
+		z-index: 100;
 		margin-left: auto;
 		margin-right: 0;
 
 	}
 
 	.menu_item{
+		//z-index: 100;
 		display: inline-block;
 		margin-top: 25px;
 		margin-left: 15px;
 		text-decoration: none;
 		color: black; 	
-	}
+	}	
 
 	.header_menu > a{
 		text-decoration: none;
@@ -269,34 +324,45 @@
 		color: #4d4d4d;
 	}
 
-	.download_button:hover{
-		box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+	.download_button:hover {
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3), 0px 5px 10px rgba(0,0,0,0.3);
 		color: black;
 	}
+
+	.download_button:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
+	}
+
 	.services_block{
 		min-width: 600px;
 		box-sizing: border-box;
 		padding: 110px;
-		display: grid;
-		height: 700px;
+		padding-left: 5%;
+		padding-right: 5%;
+		height: 600px;
 		align-items: center;
 		background-color: #f6f6f6;
-		padding: 110px;
 		font-family: 'Asap', sans-serif;
 		color: #4d4d4d;
+	}
+
+	.services_container{
+
 	}
 
 	.services_panel{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
-		grid-gap: 150px 250px;
-		padding: 60px;
+		padding-top: 60px;
 	}
 
 	.serv_panel_item{
-		display: grid;
+		display: inline-block;
+		margin: 0 auto;
+		margin-bottom: 50px;
 		align-items: center;
+		text-align: center;
 	}
 
 	.my_skills_block{
@@ -344,43 +410,30 @@
 	}
 
 	.portfolio_block_panel{
+		//border:2px dotted blue;
 		display: grid;
 		margin-left: -10px;
 		margin-right: -10px;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+		align-items: center;
 		padding-top: 60px;
 	}
 
-	@media (min-width: 1070px){
-		.portfolio_container{
-			width: 960px;
-		}
-
-		.panel_item{
-			width: 300px;
-			height: 250px;
-			margin: 10px;
-		}
-
-		.portfolio_block{
-			height: 1000px;
-		}
+	.portfolio_container{
+		//border: 2px dotted red;
+		max-width: 1200px;
+		padding-bottom: 100px;
 	}
-	@media (max-width: 1069px){
-		.portfolio_container{
-			width: 540px;
-		}
 
-		.panel_item{
-			width: 170px;
-			height: 150px;
-			margin: 7px;
-		}
+	.panel_item{
+		//width: 300px;
+		//height: 250px;
+		margin: 10px;
+	}
 
-		.portfolio_block{
-			height: 700px;
-		}
+	.portfolio_block{
+		//height: 1000px;
 	}
 	
 	.port_image{
@@ -404,9 +457,13 @@
 
 	}
 
-	.load_more_button:hover{
-		box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+	.load_more_button:hover {
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3), 0px 5px 10px rgba(0,0,0,0.3);
 		color: black;
+	}
+
+	.load_more_button:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
 	}
 
 	.port_image:hover{
@@ -520,27 +577,6 @@
 
 	}
 
-
-	form > div > button[type="submit"] {
-		padding: 0;
-		width: 100%;
-		background-color: white;
-		height: 50px;
-		border: none;
-		font-family: "Open Sans";
-		font-size: 16px;
-		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-		color: #4d4d4d;
-		text-align: center;
-	}
-
-	form > div > button[type="submit"] > img{
-		width: 12px;
-		height: auto;
-		margin: 0px 0px 0px 5px;
-		opacity: 0.8;
-	}
-
 	form > div > input[type="text"]{
 	}
 
@@ -566,27 +602,49 @@
 		position:  relative;
 	}
 
-	.top_arrow {
-		position: relative;
-		left: 500px;
-		bottom: 180px;
-		width: 50px;
-		background-color: white;
-		height: 50px;
-		border: none;
-		font-family: "FontAwesome";
-		font-size: 22px;
-		font-stretch: extra-expanded;
-		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+	.submit_button{
+		
 	}
 
-	.top_arrow:hover {
-		box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2), 0px 5px 10px rgba(0,0,0,0.3);
+	.submit_button:hover {
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3), 0px 5px 10px rgba(0,0,0,0.3);
 		color: black;
 	}
 
-	.top_arrow img{
-		width: 20px;
+	.submit_button:active{
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
+		color: black;
+	}
+
+	form > div > button[type="submit_button"] {
+		padding: 0;
+		width: 100%;
+		background-color: white;
+		height: 50px;
+		font-family: "Open Sans";
+		font-size: 16px;
+		box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+		color: #4d4d4d;
+		text-align: center;
+		outline: none;
+		border: none;
+	}
+
+	form > div > button[type="submit_button"]:hover {
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3), 0px 5px 10px rgba(0,0,0,0.3);
+		color: black;
+	}
+
+	form > div > button[type="submit_button"]:active {
+		box-shadow: inset 0px 0px 14px rgba(0,0,0,0.6), 0px 5px 5px rgba(0,0,0,0.1);
+		color: black;
+	}
+
+	form > div > button[type="submit_button"] > img{
+		width: 12px;
+		height: auto;
+		margin: 0px 0px 0px 5px;
+		opacity: 0.8;
 	}
 
 	.footer_root{
