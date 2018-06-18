@@ -492,17 +492,48 @@
 		color: #4d4d4d;
 	}
 
-	.slide_block{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-
+	#slider-wrap{ /* Оболочка слайдера и кнопок */
+		width:660px; 
 	}
 
-	.slide_item{
-		display: grid;
-		grid-template-columns: 1fr 5fr;
-
+	#slider{ /* Оболочка слайдера */
+		width:640px;
+		height:260px;
+		overflow: hidden;
+		border:#eee solid 10px;
+		position:relative;
 	}
+
+	.slide{ /* Слайд */
+		display: inline-block;
+		width:100%;
+		height:100%;
+	}
+
+	.sli-links { /* Кнопки смены слайдов */
+		margin-top:10px;
+		text-align:center;
+	}
+
+	.sli-links .control-slide {
+		margin:2px;
+		display:inline-block;
+		width:12px;
+		height:12px;
+		border: 1px solid black;
+		overflow:hidden;
+		text-indent:-9999px;
+	}
+	.sli-links .control-slide:hover {
+		cursor:pointer;
+		background-color: black;
+		opacity: 0.5;
+		}
+
+	.sli-links .control-slide.active {
+		background-color: black;
+	}
+
 	.metric_panel{
 		vertical-align: bottom;
 	}
