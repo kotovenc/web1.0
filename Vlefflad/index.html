@@ -130,49 +130,45 @@
 	</div>
 	<a id="testimonials"></a>
 	<div class="testimonials_block">
-		<div class="block_title">
-			<hr>
-			<h2>Testimonials</h2>
-		</div> <!--Не знаю как точно делать эту штуку. Возможно, неправильно разметил-->
-		<div id="slider-wrap">
-			<div id="slider">
-				<div class="slide">
-					<div id="slide_img"><img src="img/thinker1.jpeg" name="person1"></div>
-					<div id="slide_item_content">
-						<h2>Ilon Mask</h3>
-						<h4>CEO/The Boring Company</h4>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
+		<div class="testimonials_container">
+			<div class="block_title">
+				<hr>
+				<h2>Testimonials</h2>
+			</div> <!--Не знаю как точно делать эту штуку. Возможно, неправильно разметил-->
+			<div id="slider-wrap">
+				<div id="slider">
+					<div class="slide">
+						<div id="slide_img"><img src="img/thinker1.jpeg" name="person1"></div>
+						<div id="slide_item_content">
+							<h2>Elon Musk</h3>
+							<h4>CEO/The Boring Company</h4>
+							It is important for a genius, as myself, to eat healthy and to stay fit all the time, and I think, these pickles are just what I need to do that.
+							I don't know what are they made from and where do they come from - but how can something green and tasty be un-healthy? Of course they are healthy!
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div id="slide_img"><img src="img/thinker2.png" name="person1"></div>
-					<div id="slide_item_content">
-						<h2>Limura Tusi</h3>
-						<h4>CEO/Random Company</h4>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
+					<div class="slide">
+						<div id="slide_img"><img src="img/thinker2.png" name="person1"></div>
+						<div id="slide_item_content">
+							<h2>Limura Tusi</h3>
+							<h4>CEO/Random Company</h4>
+							Somebody once told me the world is gonna roll me, I ain't the sharpest tool in a shed. She was looking kind of dumb with her finger and her thumb in a shape of an 'L' on her forhead.<br>
+							Well, the years start coming and they don't stop coming, and they don't stop coming, and they don't stop coming
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div id="slide_img"><img src="img/thinker3.png" name="person1"></div>
-					<div id="slide_item_content">
-						<h2>Galina Alekseevna</h3>
-						<h4>CEO/web1.0</h4>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
+					<div class="slide">
+						<div id="slide_img"><img src="img/thinker3.png" name="person1"></div>
+						<div id="slide_item_content">
+							<h2>Galina Alekseevna Malygina</h3>
+							<h4>CEO/web1.0</h4>
+							Pickles are good. I like pickles.
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-		<div class="metric_panel">
+	<div class="metric_panel">
+		<div class="metric_container">
 			<div class="metric_panel_item">
 				<img src="img/study.png">
 			</div>
@@ -202,13 +198,15 @@
 				Cups of coffe
 			</div>	
 		</div>
+	</div>
 	
 	<a id="contact"></a>
 	<div class="contact_block">
 		<div class="contact_content">
-				<hr>
-				<h2>Say Hello!</h2>
+			<hr>
+			<h2>Say Hello!</h2>
 			<form>
+				<div class="form_grid">
 					<div class="text">
 						<input  type="text" id = "name" name="Name" placeholder="Name">
 					</div>
@@ -218,9 +216,10 @@
 					<div class="message">
 						<textarea placeholder="Message"></textarea>
 					</div>
-					<div class="submit">
-						<button type="submit_button"><b>SEND</b><img src="img/send-button.png"></button>
-					</div>
+				</div>
+				<div class="submit">
+					<button type="submit_button"><b>SEND</b><img src="img/send-button.png"></button>
+				</div>
 			</form>
 			<button class="top_arrow" id="ta"><img src="img/up.png" name="top arrow"></button>
 		</div>
