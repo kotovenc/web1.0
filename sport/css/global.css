@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(../img/bg.png);
+  background-size: 100%;
+}
+
+.header {
+  min-width: 600px;
+	box-sizing: border-box;
+  height: 150px;
+  //padding: 100px;
+  background-color: black;
+
+}
+
+.header_logo {
+  height: 100px;
+  color: #FFFFFF;
+}
+
+.logo_image {
+  height: 135px;
+  margin-left: 130px;
+}
+
+.envato {
+  position: relative;
+  display: inline-block;
+  bottom: 50px;
+  font-size: 60px;
+}
