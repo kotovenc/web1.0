@@ -13,7 +13,7 @@ body {
 	box-sizing: border-box;
   height: 150px;
   //padding: 100px;
-  background-color: black;
+  //background-color: black;
 
 }
 
@@ -62,7 +62,6 @@ body {
 #navigation ul li a{
   color: #FFFFFF;
   padding: 23px;
-  color: #ffffff;
   font-family: "Roboto - Thin";
   font-size: 15px;
   font-weight: 400;
@@ -76,7 +75,7 @@ body {
   height: 198px;
   width: 972px;
   border: 2px solid #82b541;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 .num {
@@ -98,3 +97,137 @@ body {
   text-transform: uppercase;
 }
 
+.form {
+  height: 530px;
+  width: 430px;
+  background-color: #FFFFFF;
+  margin-top: 116px;
+  margin-left: 771px;
+  align: center;
+
+}
+
+.Base {
+  //position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+  margin-top: 116px;
+  margin-left: 771px;
+  width: 431px;
+  height: 530px;
+  z-index: 186;
+}
+
+.Sign_up {
+  height: 46px;
+  padding: 35px;
+  color: #252525;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 76px;
+}
+
+input {
+  //align: right;
+  width: 370px;
+  height: 53px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  //background-color: black;
+}
+
+input:focus {
+  outline: 0;
+  border: 2px solid #90d23d;
+}
+
+.welcome {
+  position: relative;
+  min-width: 300px;
+  width: 580px;
+  height: 300px;
+  left: 150px;
+  top: -300px;
+  color: #242424;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.wel{
+  color: #242424;
+  font-family: "Roboto - Black";
+  font-size: 50px;
+  font-weight: 700;
+}
+.undtext {
+  color: #6c6c6c;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 114px;
+}
+
+.submitbut {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #90d23d; 
+  background-color: #90d23d;
+}
+
+#cheliki{
+  position: relative;
+  width: 900px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #90d23d;
+
+}
+.tri {
+  width: 198px;
+  height: 198px;
+  margin-left: 51px;
+  
+}
+.chel1{
+  width: 300px;
+  height: 400px;
+}
+
+.chel2{
+  width: 300px;
+  height: 400px;
+  margin-left: 300px;
+  margin-top: -400px;
+}
+
+.chel3{
+  width: 300px;
+  height: 400px;
+  margin-left: 600px;
+  margin-top: -400px;
+}
+
+.hedpodchelic {
+  color: #242424;
+  font-family: "Roboto - Black";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.podchelic {
+  color: #242424;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
