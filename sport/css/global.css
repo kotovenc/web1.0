@@ -3,6 +3,13 @@
   padding: 0px;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto'), url('../fonts/Roboto/Roboto.woff2') format('woff2'), url('../fonts/Roboto/Roboto.woff') format('woff'), url('../fonts/Roboto/Roboto.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 body {
   background-image: url(../img/bg.png);
   background-size: 100%;
@@ -121,23 +128,21 @@ body {
 .Sign_up {
   height: 46px;
   padding: 35px;
-<<<<<<< HEAD
   color: #252525;
   font-family: Roboto;
   font-size: 30px;
   font-weight: 700;
   padding-left: 76px;
-=======
->>>>>>> 3551492d94b5e1e882f7fbbd7a2c1e244a284d4e
 }
 
 input {
   //align: right;
+  font-size: 16px;
+  padding-left: 10px;
   width: 370px;
   height: 53px;
   margin-left: 30px;
   margin-bottom: 20px;
-<<<<<<< HEAD
   border: 1px solid #bebebe;
   border-radius: 5px;
   //background-color: black;
@@ -146,21 +151,16 @@ input {
 input:focus {
   outline: 0;
   border: 2px solid #90d23d;
-}
-
-=======
   //background-color: black;
 }
 
->>>>>>> 3551492d94b5e1e882f7fbbd7a2c1e244a284d4e
 .welcome {
   position: relative;
   min-width: 300px;
   width: 580px;
   height: 300px;
-<<<<<<< HEAD
   left: 150px;
-  top: -300px;
+  top: -220px;
   color: #242424;
   font-family: Roboto;
   font-size: 14px;
@@ -169,13 +169,14 @@ input:focus {
 
 .wel{
   color: #242424;
-  font-family: "Roboto - Black";
+  font-family: "Roboto";
   font-size: 50px;
-  font-weight: 700;
+  font-weight: bold;
 }
+
 .undtext {
   color: #6c6c6c;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 15px;
   font-weight: 300;
   padding-left: 114px;
@@ -183,11 +184,11 @@ input:focus {
 
 .submitbut {
   color: #ffffff;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 22px;
   font-weight: 700;
   border-radius: 5px;
-  border: 1px solid #90d23d; 
+  border: 1px solid #90d23d;
   background-color: #90d23d;
 }
 
@@ -198,14 +199,15 @@ input:focus {
   margin-top: -200px;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid #90d23d;
+  //border: 3px solid #90d23d;
 
 }
 .tri {
   width: 198px;
   height: 198px;
-  margin-left: 51px;
-  
+  margin-left: 55px;
+  margin-bottom: 40px;
+
 }
 .chel1{
   width: 300px;
@@ -217,6 +219,7 @@ input:focus {
   height: 400px;
   margin-left: 300px;
   margin-top: -400px;
+
 }
 
 .chel3{
@@ -228,7 +231,7 @@ input:focus {
 
 .hedpodchelic {
   color: #242424;
-  font-family: "Roboto - Black";
+  font-family: "Roboto";
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -236,14 +239,41 @@ input:focus {
 
 .podchelic {
   color: #242424;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 300;
   text-align: center;
-}
-=======
   left: 170px;
   top: -200px;
-  border: 3px solid black;
+  margin-top: 20px;
+  width: 275px;
 }
->>>>>>> 3551492d94b5e1e882f7fbbd7a2c1e244a284d4e
+
+.tab {
+  width: 1030px;
+  height: 374px;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 90px;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: normal;
+  color: #039;
+  padding: 10px 15px;
+}
+
+td {
+  color: #669;
+  padding: 10px 15px;
+
+}
+
+/*tr {
+  background: #4b4d4f;
+}
+
+.tab tr:first-child {background-color: #99cc33;}
+tr:nth-child(2n) {background: #333333;}
