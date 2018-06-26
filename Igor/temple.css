@@ -1,13 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-/*	display: grid;*/
 	padding: 0;
 	margin: 0;
 	background-color: #4a454b;
-	justify-content: center;
 	min-width:1200px; 
 }
+
 img {
 	border: 0;
 }
@@ -22,15 +21,39 @@ p{
 	margin: 5px;
 	margin-right: 25px;
 	margin-left: 25px;
-	
 }
 .Bu_green{
 	height: 40px;
 	background-color: #90d23d;
-	border-radius: 3px;
+	border-radius: 4px;
 	border: none;
 	color: white;
 	padding-bottom: 5px;
+	text-align: center;
+}
+
+.Bu_bold{
+	background-color: #90d23d;
+	border: none;
+	color: white;
+	padding-bottom: 5px;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+.f50{
+	font-size: 50px;
+	color: black;
+	font-weight: 900;
+}
+.f35{
+	font-size: 35px;
+	font-weight: 900;
+	width: 250px;
+	color: black;
 }
 
 .header{
@@ -40,20 +63,22 @@ p{
 	width: 100%;
 	color: white;
 	text-align: center;
-	margin: 20px;
+	margin-top: 20px;
 }
-
+.logo{
+	padding-left: 80px;
+}
 .timer{
 	height: 300px;
 	border: 2px solid #82b541;
 	border-radius: 30px ;
 	margin: 100px;
 }
+
 .icons{
 	position: absolute;
 	padding-left: 50px;
-	padding-top: 10px;
-	
+	padding-top: 10px;	
 }
 .paragrambox{
 	position: relative;
@@ -116,16 +141,7 @@ p{
 	margin: 10px;
 }
 
-.f50{
-	font-size: 50px;
-	color: black;
-}
-.f35{
-	font-size: 35px;
-	font-weight: 900;
-	width: 250px;
-	color: black;
-}
+
 
 .pictures{
 	position: relative;
@@ -216,6 +232,7 @@ p{
 	margin-left: 50px;
 }
 
+
 .P_elite{
 	position:absolute;
 	height: 150px;
@@ -224,7 +241,7 @@ p{
 	border-radius: 100%;
 	color: #4D1C00;
 	margin: 100px;
-	margin-top: 250px;
+	margin-top: 290px;
 	padding-top:100px;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	font-size: 20px;
@@ -260,12 +277,10 @@ p{
 	top: 52%;
 	right: 13%;
 }
-
 .elites{
 	padding-top: 100px;
 	position: relative;
 	right: 150px;
-	border: 1px solid #880002;
 	height: 550px
 }
 .elites_text{
@@ -274,34 +289,28 @@ p{
 }
 .elites p{
 	color: aliceblue;
-	width: 800px;
+	width: 650px;
 	margin: 20px;
 	text-align: right;
-	
 }
-.Bu_let{
+.elites .Bu_green{
 	margin-right: 20px;
 	position: absolute;
 	right: 0;
-	text-align: center;
 	width: 200px;
-	height: 30px;
-	padding-top: 10px;
-	outline: none;
-	color: white;
-	background-color: #90d23d;
-	border-radius: 4px;
-	border: none;
+	top:450px;
 }
+
 
 .speakers{
 	position: relative;
 	height: 1400px;
-	border-bottom: 1px solid black;
+	top: 50px;
 }
 .paragram2{
 	position: absolute;
 	left: 0;
+	top: -100px;
 	height: inherit;
 	width: 100%;
 	background-color: white;
@@ -314,8 +323,8 @@ p{
 }
 .speakers_table{
 	position: relative;
-	justify-content: center;
 	display:grid;
+	justify-content: center;
 	grid-template-rows:  320px 320px 320px ;
 	grid-template-columns: 320px 320px 320px;
 }
@@ -325,25 +334,24 @@ p{
 	border:none;
 	border-radius: 10px;
 }
+.speakers_table_pic{
+	width: 280px;
+	height: 280px;
+	padding: 20px;
+}
+
+
 .sponsor{
-	height: 700px;
-	justify-content: center;
+	height: 600px;
 	text-align: center;
-	border-bottom: 1px solid white;
 }
-.Bu_sponsor{
-	position: relative;
-	text-align: center;
-	width: 200px;
-	height: 30px;
-	padding-top: 10px;
-	outline: none;
+.sponsor p{
 	color: white;
-	background-color: #90d23d;
-	border-radius: 4px;
-	border: none;
-	left:calc(50vw - 100px);
 }
+.sponsor_pic{
+	padding: 20px;
+}
+
  
 .past{
 	position: relative;
@@ -351,16 +359,15 @@ p{
 	background-color: white;
 }
 
-.t{
+.past .Bu_bold{
 	position: relative;
-	font-size: 50px;
-	color: black;
-	padding-top: 100px;
-	/*z-index: 99;*/
+	width: 200px;
+	color: white;
+	background-color: #1E1E1E;
+	left:calc(50vw - 100px);
 }
 .paragram3{
 	position: absolute;
-/*	z-index: 90;*/
 	left: 0;
 	top:-5.25vw;
 	height: inherit;
@@ -396,54 +403,39 @@ p{
 	padding: 40px;
 	left:calc(50vw - 600px);
 }
-.Bu_View{
-	position: relative;
-	text-align: center;
-	width: 200px;
-	height: 30px;
-	padding-top: 10px;
-	outline: none;
-	color: white;
-	background-color: #1E1E1E;
-	border-radius: 4px;
-	border: none;
-	left:calc(50vw - 100px);
-}
+
 .map{
 	height: 650px;
-	width: 100%;
-	background: #494949;
-	
+	background: linear-gradient(#fe763b,yellow);
+	padding-left: calc(50vw - 600px);
 }
-.map_send{
+.map_info{
 	display: grid;
 	grid-template-columns: 700px 450px ;
 	width: 1150px;
-	background-color: green;
+	background-color: white;
+
 }
 .map_pic{
 	display: flex;
 	flex-direction:column;
 	text-align: center;
-	width: 700px;
+	width: 300px;
 	justify-content: center;
 	padding-left: 40px;
 	align-content: flex-end;
 }
+.map_pic p {
+	position: relative;
+	left: 200px;
+}
 .map_pic_img{
 	position: relative;
-	left:250px;
+	left:275px;
 }
-.Bu_map{
+.map_pic .Bu_bold{
 	position: relative;
-	text-align: center;
-	width: 200px;
-	height: 30px;
-	padding-top: 0;
-	outline: none;
-	color: white;
 	background-color: #90d23d;
-	border-radius: 4px;
 	border: none;
 	left:250px;
 }
@@ -474,24 +466,22 @@ p{
 	border: 2px solid #AFAFAF;
 	font-size: 19px;
 }
-.Bu_Send{
+.map_send_mail .Bu_green{
 	position: relative;
-	text-align: center;
 	width: 400px;
-	height: 30px;
-	padding-top: 0;
-	outline: none;
-	color: white;
 	background-color: #1E1E1E;
-	border-radius: 4px;
-	border: none;
 }
 .map_s_m_address:hover {border: 2px solid #90d23d;}
 .map_s_m_message:hover {border: 2px solid #90d23d;}
+
+
 .footer{
-	height: 200px;
-	background-color: #8AF256;
+	height: 300px;
+	background-color: #90d23d;
 	text-align: center;
+}
+.footer p{
+	color:white;
 }
 .footer_buttons{
 	display: flex;
